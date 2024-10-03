@@ -37,6 +37,7 @@ public class Kingdom {
   private King king;
   private Castle castle;
   private Army army;
+  private Wizard wizard;
 
   /**
    * The factory of kingdom factories.
@@ -47,7 +48,7 @@ public class Kingdom {
      * Enumeration for the different types of Kingdoms.
      */
     public enum KingdomType {
-      ELF, ORC
+      ELF, ORC, GIANT
     }
 
     /**
@@ -57,6 +58,7 @@ public class Kingdom {
       return switch (type) {
         case ELF -> new ElfKingdomFactory();
         case ORC -> new OrcKingdomFactory();
+        case GIANT -> new GiantKingdomFactory();
       };
     }
   }

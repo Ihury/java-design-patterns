@@ -70,6 +70,12 @@ public class App implements Runnable {
     LOGGER.info(kingdom.getArmy().getDescription());
     LOGGER.info(kingdom.getCastle().getDescription());
     LOGGER.info(kingdom.getKing().getDescription());
+
+    LOGGER.info("giant kingdom");
+    createKingdom(Kingdom.FactoryMaker.KingdomType.GIANT);
+    LOGGER.info(kingdom.getArmy().getDescription());
+    LOGGER.info(kingdom.getCastle().getDescription());
+    LOGGER.info(kingdom.getKing().getDescription());
   }
 
   /**
@@ -81,5 +87,6 @@ public class App implements Runnable {
     kingdom.setKing(kingdomFactory.createKing());
     kingdom.setCastle(kingdomFactory.createCastle());
     kingdom.setArmy(kingdomFactory.createArmy());
+    kingdom.setWizard(kingdomFactory.createWizard());
   }
 }
