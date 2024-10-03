@@ -64,18 +64,21 @@ public class App implements Runnable {
     LOGGER.info(kingdom.getArmy().getDescription());
     LOGGER.info(kingdom.getCastle().getDescription());
     LOGGER.info(kingdom.getKing().getDescription());
+    LOGGER.info(kingdom.getWizard().getDescription());
 
     LOGGER.info("orc kingdom");
     createKingdom(Kingdom.FactoryMaker.KingdomType.ORC);
     LOGGER.info(kingdom.getArmy().getDescription());
     LOGGER.info(kingdom.getCastle().getDescription());
     LOGGER.info(kingdom.getKing().getDescription());
+    LOGGER.info(kingdom.getWizard().getDescription());
 
     LOGGER.info("giant kingdom");
     createKingdom(Kingdom.FactoryMaker.KingdomType.GIANT);
     LOGGER.info(kingdom.getArmy().getDescription());
     LOGGER.info(kingdom.getCastle().getDescription());
     LOGGER.info(kingdom.getKing().getDescription());
+    LOGGER.info(kingdom.getWizard().getDescription());
   }
 
   /**
